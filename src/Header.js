@@ -15,7 +15,7 @@ function Header(){
                     <Link to='/' className="nav-link" >Api One</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to='/apitwo' className="nav-link" >Api Two</Link>
+                    <Link to='/service' className="nav-link" >Api Two</Link>
                 </li>
                 </ul>
             </div>
