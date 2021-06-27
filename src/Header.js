@@ -20,6 +20,12 @@ function Header(){
                 <li className="nav-item">
                     <Link to='/dashboard' className="nav-link" >My Dashboard</Link>
                 </li>
+                <li className="nav-item">
+                    <Link to='/apifour' className="nav-link" >Api Four express body-parser</Link>
+                </li>
+                <li className="nav-item">
+                    <Link to='/apifive' className="nav-link" >Api Five express body-parser</Link>
+                </li>
                 </ul>
             </div>
             </nav>
