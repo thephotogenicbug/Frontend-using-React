@@ -6,7 +6,7 @@ import ApiTwo from './Apitwo'
 import ApiThree from './Apithree';
 import ApiFour from './Apifour';
 import ApiFive from './Apifive';
-
+import ApiSix from './Apisix';
 function App(){
   return(
     <HashRouter>
@@ -16,6 +16,7 @@ function App(){
        <Route exact path='/dashboard' component={ApiThree}/>
        <Route exact path='/apifour' component={ApiFour}/>
        <Route exact path='/apifive' component={ApiFive}/>
+       <Route exact path='/apisix' component={ApiSix}/>
     </HashRouter>
   )
 }

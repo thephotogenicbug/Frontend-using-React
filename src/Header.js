@@ -26,6 +26,9 @@ function Header(){
                 <li className="nav-item">
                     <Link to='/apifive' className="nav-link" >Api Five express body-parser</Link>
                 </li>
+                <li className="nav-item">
+                    <Link to='/apisix' className="nav-link" >Api Six express body-parser</Link>
+                </li>
                 </ul>
             </div>
             </nav>

@@ -11,7 +11,7 @@ class ApiFour extends Component{
   }
 
 getCity = () =>{
-  fetch("http://localhost:8080/city")
+  fetch("http://localhost:555/city")
   .then(response=>response.json())
   .then(allcity => this.setState({
     citylist: allcity
@@ -19,7 +19,7 @@ getCity = () =>{
 }
 
 getBook = () =>{
-  fetch("http://localhost:8080/book")
+  fetch("http://localhost:555/book")
   .then(response=>response.json())
   .then(allbook => this.setState({
     booklist: allbook
@@ -27,7 +27,7 @@ getBook = () =>{
 }
 
 getCourse = () =>{
-    fetch("http://localhost:8080/course")
+    fetch("http://localhost:555/course")
     .then(response=>response.json())
     .then(allcourse => this.setState({
       courselist: allcourse

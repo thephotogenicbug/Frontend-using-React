@@ -9,7 +9,7 @@ class ApiFive extends Component{
   }
 
 getCustomer = () =>{
-  fetch("http://localhost:8080/customer")
+  fetch("http://localhost:555/customer")
   .then(response=>response.json())
   .then(allcustomer => this.setState({
     customerlist: allcustomer
