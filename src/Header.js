@@ -12,22 +12,28 @@ function Header(){
             <div className="collapse navbar-collapse" id="navbarCollapse">
                 <ul className="navbar-nav mr-auto">
                 <li className="nav-item">
-                    <Link to='/' className="nav-link" >Api One</Link>
+                    <Link to='/' className="nav-link" >ApiOne</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to='/service' className="nav-link" >Api Two</Link>
+                    <Link to='/service' className="nav-link" >ApiTwo</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to='/dashboard' className="nav-link" >My Dashboard</Link>
+                    <Link to='/dashboard' className="nav-link" >Dashboard</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to='/apifour' className="nav-link" >Api Four express body-parser</Link>
+                    <Link to='/apifour' className="nav-link" >ApiFour </Link>
                 </li>
                 <li className="nav-item">
-                    <Link to='/apifive' className="nav-link" >Api Five express body-parser</Link>
+                    <Link to='/apifive' className="nav-link" >ApiFive </Link>
                 </li>
                 <li className="nav-item">
-                    <Link to='/apisix' className="nav-link" >Api Six express body-parser</Link>
+                    <Link to='/apisix' className="nav-link" >ApiSix </Link>
+                </li>
+                <li className="nav-item">
+                    <Link to='/emplist' className="nav-link" >fetch employee class </Link>
+                </li>
+                <li className="nav-item">
+                    <Link to='/newemp' className="nav-link" >post employee class </Link>
                 </li>
                 </ul>
             </div>

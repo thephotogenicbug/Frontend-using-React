@@ -7,6 +7,8 @@ import ApiThree from './Apithree';
 import ApiFour from './Apifour';
 import ApiFive from './Apifive';
 import ApiSix from './Apisix';
+import Employee from './emp';
+import NewEmployee from './newemp';
 function App(){
   return(
     <HashRouter>
@@ -17,6 +19,8 @@ function App(){
        <Route exact path='/apifour' component={ApiFour}/>
        <Route exact path='/apifive' component={ApiFive}/>
        <Route exact path='/apisix' component={ApiSix}/>
+       <Route exact path='/emplist' component={Employee}/>
+       <Route exact path="/newemp" component={NewEmployee}/>
     </HashRouter>
   )
 }
