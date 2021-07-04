@@ -1,9 +1,11 @@
 import React,{Component} from 'react';
+import axios from 'axios';
 class Employee extends Component{
 	constructor(){
 		super();
 		this.state ={
 			emplist:[],
+            message:''
 		}
 	}
 	getEmp =()=>{
@@ -18,6 +20,20 @@ class Employee extends Component{
 		this.getEmp();
 	}
 
+    componentDidUpdate(){
+        this.getEmp();
+    }
+
+    deleteEmp = (empid) =>{
+        var url = "http://localhost:2222/deleteEmployee";
+        var input = {"id" : empid};
+        axios.post(url , input)
+        .then(response => this.setState({message:response.data}))
+        
+      /*  this.getEmp(); to reload the page 
+         alert(empid) */
+     }
+
 	
 	render(){
 			  return( 
@@ -25,16 +41,17 @@ class Employee extends Component{
 					<div className="row">
                         <div className="col-lg-12">
                             <h2 align="center"> Total Employee : {this.state.emplist.length} </h2>
-                            
-                            <table className="table table-bordered">
+                            <p className="text-center text-danger"> {this.state.message} </p>
+                            <table className="table table-bordered text-center">
                                 <thead>
                                     <tr className="bg-light text-danger">
-                                        <th> Emp Id </th>
-                                        <th> Employee Name </th>
-                                        <th> Salary </th>
-                                        <th> City </th>
-                                        <th> Mobile </th>
-                                        <th> Email Id </th>
+                                        <th>Emp Id</th>
+                                        <th>Employee Name</th>
+                                        <th>Salary</th>
+                                        <th>City</th>
+                                        <th> Mobile</th>
+                                        <th> Email Id</th>
+                                        <th>Delete</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -47,7 +64,14 @@ class Employee extends Component{
                                                     <td>{emp.salary}</td>
                                                     <td>{emp.city}</td>
                                                     <td>{emp.mobile}</td>
-                                                     <td>{emp.email}</td>
+                                                    <td>{emp.email}</td>
+                                                     <td>
+                                                         <button 
+                                                         className="btn btn-danger" 
+                                                         onClick={this.deleteEmp.bind(this, emp.empid)}>
+                                                         Delete
+                                                        </button>
+                                                     </td>
                                                 </tr>
                                             )
                                         })
