@@ -72,6 +72,7 @@ getBook = () =>{
               <td>{book.price}</td>
               <td>{book.qty}</td>
               <td>
+             
               <button 
               className="btn btn-danger" 
               onClick={this.deleteBook.bind(this, book.bookid)} >

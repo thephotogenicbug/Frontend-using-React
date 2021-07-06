@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import {Link} from 'react-router-dom';
 import axios from 'axios';
 class Employee extends Component{
 	constructor(){
@@ -51,7 +52,7 @@ class Employee extends Component{
                                         <th>City</th>
                                         <th> Mobile</th>
                                         <th> Email Id</th>
-                                        <th>Delete</th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -66,8 +67,12 @@ class Employee extends Component{
                                                     <td>{emp.mobile}</td>
                                                     <td>{emp.email}</td>
                                                      <td>
+                                                        <Link to={`/${emp.empid}/editemp`} 
+                                                         className="btn btn-warning btn-sm m-2 text-white">
+                                                         Edit Employee
+                                                         </Link>
                                                          <button 
-                                                         className="btn btn-danger" 
+                                                         className="btn btn-danger btn-sm" 
                                                          onClick={this.deleteEmp.bind(this, emp.empid)}>
                                                          Delete
                                                         </button>
