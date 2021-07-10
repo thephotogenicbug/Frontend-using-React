@@ -1,6 +1,8 @@
 import React,{useEffect, useState} from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router';
+
+
 const EditEmployee = () =>{
    const{id} = useParams();
    const[name, processName] = useState("");
@@ -8,8 +10,6 @@ const EditEmployee = () =>{
    const[mobile, processMobile] = useState("");
    const[email, processEmail] = useState("");
    const[city, processCity] = useState("");
-
-
 
  const getInfo = () =>{
        var url = "http://localhost:2222/getempinfo"
@@ -44,9 +44,7 @@ const EditEmployee = () =>{
    
     })
    }
-
-
-    
+   
         return(
             <div className="container mt-5">
                 <div className="col-md-12 mb-3 text-center">

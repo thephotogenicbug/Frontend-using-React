@@ -10,6 +10,7 @@ import ApiSix from './Apisix';
 import Employee from './emp';
 import NewEmployee from './newemp';
 import EditEmployee from './editemp';
+import FileSystem from './filesystem';
 function App(){
   return(
     <HashRouter>
@@ -23,6 +24,7 @@ function App(){
        <Route exact path='/emplist' component={Employee}/>
        <Route exact path="/newemp" component={NewEmployee}/>
        <Route exact path="/:id/editemp" component={EditEmployee}/>
+       <Route exact path='/filesystem' component={FileSystem}/>
     </HashRouter>
   )
 }

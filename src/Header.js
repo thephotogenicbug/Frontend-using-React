@@ -35,6 +35,9 @@ function Header(){
                 <li className="nav-item">
                     <Link to='/newemp' className="nav-link" >post employee class </Link>
                 </li>
+                <li className="nav-item">
+                    <Link to='/filesystem' className="nav-link" >FileSystem </Link>
+                </li>
                 </ul>
             </div>
             </nav>
