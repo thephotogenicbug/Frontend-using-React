@@ -1,15 +1,15 @@
 import React from 'react';
 import { HashRouter, Route } from 'react-router-dom';
 import Header from './Header';
-import Apione from './Apione';
-import ApiTwo from './Apitwo'
-import ApiThree from './Apithree';
-import ApiFour from './Apifour';
-import ApiFive from './Apifive';
-import ApiSix from './Apisix';
-import Employee from './emp';
-import NewEmployee from './newemp';
-import EditEmployee from './editemp';
+import Apione from './Apione-fetch-class-component';
+import ApiTwo from './Apitwo-fetch-class-component';
+import ApiThree from './Apithree-fetch-class-component';
+import ApiFour from './Apifour-fetch-class-component';
+import ApiFive from './Apifive-fetch-class-component';
+import ApiSix from './Apisix-fetch-delete-class-component';
+import Employee from './emp-fetch-delete-class-component';
+import NewEmployee from './newemp-fetch-post-class-component';
+import EditEmployee from './editemp-post-functional-component';
 import FileSystem from './filesystem';
 function App(){
   return(
